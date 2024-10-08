@@ -42,4 +42,19 @@ img {
     margin: 2rem 0;
 }
 
+/* Estilos base para los iconos */
+[class*="btn-Original"] {
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent; /* Fondo blanco */
+  color: rgb(255, 255, 255); /* Color de los iconos */
+  border-radius: 4px; /* Bordes redondeados */
+  border: 1px solid white;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
 
+/* Efecto hover */
+[class*="btn-Original"]:hover {
+  background-color: orange; /* Fondo naranja al pasar el mouse */
+  color: white; /* Color del icono al pasar el mouse */
+}

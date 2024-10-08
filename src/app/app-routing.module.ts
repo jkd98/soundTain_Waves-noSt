@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./clientes/clientes.module').then( m => m.ClientesModule )
   },
   {
+    path: 'carrito',
+    loadChildren: () => import('./ventas/ventas.module').then( m => m.VentasModule )
+  },
+  {
     path: '404',
     component:Error404PageComponent
   },
