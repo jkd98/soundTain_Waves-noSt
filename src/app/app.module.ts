@@ -10,7 +10,7 @@ import { VentasModule } from './ventas/ventas.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
