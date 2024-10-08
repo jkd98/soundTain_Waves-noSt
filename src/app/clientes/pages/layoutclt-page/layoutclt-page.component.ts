@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './layoutclt-page.component.css'
 })
 export class LayoutcltPageComponent {
-
+  
 }

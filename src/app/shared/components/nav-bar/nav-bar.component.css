@@ -1,12 +1,20 @@
 .nav {
     display: grid;
     align-items: center;
-    padding: 2rem 4rem;
     column-gap: 4rem;
     grid-template-columns: 1fr 3fr 1fr;
+    background-color: var(--azul);
+    position: sticky;
+    z-index: 1000;
 }
 
 /* @media(min-width:768px) {} */
+
+@media(min-width:768px) {
+    .nav {
+        background-color: transparent;
+    }
+}
 
 .hamburger__btn {
     background-color: transparent;
