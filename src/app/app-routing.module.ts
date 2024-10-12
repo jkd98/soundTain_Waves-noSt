@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./ventas/ventas.module').then( m => m.VentasModule )
   },
   {
+    path: 'nosotros',
+    loadChildren: () => import('./nosotros/nosotros.module').then( m => m.NosotrosModule )
+  },
+  {
     path: '404',
     component:Error404PageComponent
   },
