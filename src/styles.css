@@ -51,10 +51,11 @@ img {
   border-radius: 4px; /* Bordes redondeados */
   border: 1px solid white;
   transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  text-decoration: none;
 }
 
 /* Efecto hover */
 [class*="btn-Original"]:hover {
-  background-color: orange; /* Fondo naranja al pasar el mouse */
+  background-color: var(--naranja); /* Fondo naranja al pasar el mouse */
   color: white; /* Color del icono al pasar el mouse */
 }

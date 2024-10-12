@@ -1,17 +1,30 @@
 .header {
     /* padding: 5rem 0; */
-    background-image: linear-gradient(to right, rgb(0 0 0 /.7), rgb(0 0 0 /.7)), url(/assets/header-img.jpg);
+    background-image: linear-gradient(
+        to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), 
+        url(/assets/guitarra_04.jpg);
     background-size: cover;
     background-position: 50%;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
-.header__producto {
-    display: none;
+@media (min-width:768px) {
+    .header {
+        background-image:
+            linear-gradient(
+                to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7)),
+                url(/assets/header-img.jpg);
+    }
 }
 
-@media (min-width:992px) {
+
+.header__producto {
+    display: none;
+    
+}
+
+@media (min-width:768px) {
     .header__producto {
         display: block;
         position: absolute;
@@ -23,6 +36,7 @@
         animation-delay: 0s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: 1;
+        width: 45rem;
     }
 }
 
@@ -44,24 +58,27 @@
 
 .modelo {
     color: var(--blanco);
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-align: center;
+    padding: 1rem 0 2rem 0;
+
 }
 
 @media (min-width:768px) {
     .modelo {
         text-align: left;
-        width: 50%;
+        width: 60%;
     }
 }
 
 .modelo__nombre {
     font-size: 8rem;
+    margin: 0;
 }
 
 .modelo__precio {
     font-size: 6rem;
-    color: var(--primary);
+    color: var(--naranja);
     font-weight: 900;
     line-height: 0;
 }
@@ -70,7 +87,7 @@
     margin-top: 2rem;
     text-decoration: none;
     padding: 1rem 5rem;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--naranja);
     color: var(--blanco);
     text-transform: uppercase;
     font-weight: 700;
@@ -80,5 +97,5 @@
 }
 
 .modelo__enlace:hover {
-    background-color: var(--primary);
+    background-color: var(--naranja);
 }
