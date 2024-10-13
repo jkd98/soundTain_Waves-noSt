@@ -1,7 +1,7 @@
-/* 
+
 .filtros{
-    background-color: var(--plata);
-} */
+    padding: 2rem 0;
+}
 
 
 .filtros__encabezado {
@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 1rem;
-    
+    padding: 2rem 0;
     
 }
 
@@ -62,16 +62,14 @@
     .modelo {
         margin-bottom: 0;
     }
+    .modelo:hover{
+        background-size: 25rem;
+    }
 }
 
 .modelo h3 {
     font-size: 2.5rem;
-}
-
-.modelo .precio {
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 0;
+    color: var(--naranja);
 }
 
 .modelo-x {

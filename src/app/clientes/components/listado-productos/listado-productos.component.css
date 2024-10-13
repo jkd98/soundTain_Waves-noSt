@@ -1,0 +1,17 @@
+.listado-productos {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap:2rem;
+}
+
+@media(min-width:768px) {
+    .listado-productos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width:1024px) {
+    .listado-productos {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
