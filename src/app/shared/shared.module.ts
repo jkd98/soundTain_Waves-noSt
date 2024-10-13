@@ -6,6 +6,7 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
 import { Error404PageComponent } from './pages/error404-page/error404-page.component';
 import { RouterLink } from '@angular/router';
 import { ProductoComponent } from './components/producto/producto.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -16,6 +17,7 @@ import { ProductoComponent } from './components/producto/producto.component';
     SearchBoxComponent,
     Error404PageComponent,
     ProductoComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { ProductoComponent } from './components/producto/producto.component';
     NavBarComponent,
     HeaderComponent,
     Error404PageComponent,
-    ProductoComponent
+    ProductoComponent,
+    FooterComponent,
   ]
 })
 export class SharedModule { }
