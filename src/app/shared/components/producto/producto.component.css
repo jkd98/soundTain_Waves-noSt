@@ -6,6 +6,12 @@
     background-color: var(--plata);
     border-radius: 2rem;
     overflow: hidden;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.producto:hover {
+    transform: scale(1.1);
 }
 
 .producto__imagen {
@@ -19,22 +25,26 @@
     display: block;
 }
 
+.producto__contenido {
+    padding: .5rem;
+
+}
+
 .producto__nombre {
     font-size: 3rem;
     text-transform: uppercase;
-    margin: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
 
 }
 
 .producto__descripcion {
     font-size: 1.7rem;
-
-
 }
 
 .producto__precio {
     color: var(--primary);
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 900;
     margin: 0;
 

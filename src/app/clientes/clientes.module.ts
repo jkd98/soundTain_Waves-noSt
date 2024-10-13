@@ -6,6 +6,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ClientesRoutingModule } from './clientes-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ListadoProductosComponent } from './components/listado-productos/listado-productos.component';
+import { HeroNosotrosComponent } from './components/hero-nosotros/hero-nosotros.component';
 
 
 
@@ -14,7 +15,8 @@ import { ListadoProductosComponent } from './components/listado-productos/listad
     LayoutcltPageComponent,
     FiltersComponent,
     HomePageComponent,
-    ListadoProductosComponent
+    ListadoProductosComponent,
+    HeroNosotrosComponent
   ],
   imports: [
     CommonModule,
