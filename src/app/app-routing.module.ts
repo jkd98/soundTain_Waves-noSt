@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./ventas/ventas.module').then( m => m.VentasModule )
   },
   {
+    path: 'administracion',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+  },
+  {
     path: '404',
     component:Error404PageComponent
   },
