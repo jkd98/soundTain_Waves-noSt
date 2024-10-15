@@ -10,14 +10,14 @@
     </div>
 
     <div class="nav__logo">
-        <h1>logo</h1>
+        <h1 class="logo">logo</h1>
     </div>
 
 
     <div class="nav__links" [ngClass]="{'nav__links--show':showMenu}">
         <a class="nav__enlace" href="#">Inicio</a>
         <a class="nav__enlace" href="#">Instrumentos</a>
-        <a class="nav__enlace" href="#">Nosotros</a>
+        <a class="nav__enlace" href="/nosotros">Nosotros</a>
         <a class="nav__enlace" [routerLink]="['/auth']" >Iniciar Sesión</a>
         <div class="hamburger--close">
             <button 
@@ -30,7 +30,7 @@
     </div>
 
     <div class="nav__cart">
-        cart
+        <img src="assets/iconCarrito.svg" alt="">
     </div>
 
 

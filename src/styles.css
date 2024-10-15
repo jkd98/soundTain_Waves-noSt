@@ -3,8 +3,9 @@
 :root {
     --azul:#2D3250;
     --naranja:#F97316;
-    --plata:#C6C6C6;
-    --blanco:#FFF;
+    --plata:#5f5f5f;
+    --blanco:#dddddd;
+    --negro:#000;
 
     --fuente-principal: "Roboto";
 }
@@ -51,10 +52,21 @@ img {
   border-radius: 4px; /* Bordes redondeados */
   border: 1px solid white;
   transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  text-decoration: none;
 }
 
 /* Efecto hover */
 [class*="btn-Original"]:hover {
-  background-color: orange; /* Fondo naranja al pasar el mouse */
+  background-color: var(--naranja); /* Fondo naranja al pasar el mouse */
   color: white; /* Color del icono al pasar el mouse */
+}
+
+.text-center {
+    text-align: center;
+}
+
+[class*="title"] {
+    text-align: left;
+    font-size: 2rem;
+    width: 70%;
 }

@@ -5,6 +5,8 @@ import { FiltersComponent } from './components/filters/filters.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ClientesRoutingModule } from './clientes-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { ListadoProductosComponent } from './components/listado-productos/listado-productos.component';
+import { HeroNosotrosComponent } from './components/hero-nosotros/hero-nosotros.component';
 
 
 
@@ -12,7 +14,9 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     LayoutcltPageComponent,
     FiltersComponent,
-    HomePageComponent
+    HomePageComponent,
+    ListadoProductosComponent,
+    HeroNosotrosComponent
   ],
   imports: [
     CommonModule,

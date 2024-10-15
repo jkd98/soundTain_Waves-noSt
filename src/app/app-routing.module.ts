@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
+    path: 'nosotros',
+    loadChildren: () => import('./nosotros/nosotros.module').then( m => m.NosotrosModule )
+  },
+  {
     path: '404',
     component:Error404PageComponent
   },
