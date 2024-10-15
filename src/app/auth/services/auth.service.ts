@@ -25,6 +25,7 @@ export class AuthService {
       // envira msgs de error
       let err:any = error;
       console.log(err);
+
       return; 
     }
   }
