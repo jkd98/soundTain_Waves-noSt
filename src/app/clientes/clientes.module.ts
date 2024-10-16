@@ -7,22 +7,27 @@ import { ClientesRoutingModule } from './clientes-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ListadoProductosComponent } from './components/listado-productos/listado-productos.component';
 import { HeroNosotrosComponent } from './components/hero-nosotros/hero-nosotros.component';
-
-
-
+import { InstrumentosGeneralComponent } from './pages/instrumentos-general/instrumentos-general.component';
+import { MatFormFieldModule } from '@angular/material/form-field'; // Importar para mat-form-field
+import { MatInputModule } from '@angular/material/input'; // Importar para matInput
+import { FormsModule } from '@angular/forms'; // Para usar [(ngModel)] si es necesario
 @NgModule({
   declarations: [
     LayoutcltPageComponent,
     FiltersComponent,
     HomePageComponent,
     ListadoProductosComponent,
-    HeroNosotrosComponent
+    HeroNosotrosComponent,
+    InstrumentosGeneralComponent
   ],
   imports: [
     CommonModule,
-    
     ClientesRoutingModule,
-    SharedModule
+    SharedModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
+    
   ]
 })
 export class ClientesModule { }
