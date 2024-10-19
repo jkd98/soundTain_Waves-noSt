@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Error404PageComponent } from './shared/pages/error404-page/error404-page.component';
-import { InstrumentosGeneralComponent } from './clientes/pages/instrumentos-general/instrumentos-general.component';
 
 const routes: Routes = [
   {
@@ -32,10 +31,6 @@ const routes: Routes = [
     path: '',
     redirectTo: 'clientes',
     pathMatch: 'full'
-  },
-  {
-    path: 'instrumentos',
-    component: InstrumentosGeneralComponent
   },
   {
     path:'**',
