@@ -10,7 +10,8 @@ import { HeroNosotrosComponent } from './components/hero-nosotros/hero-nosotros.
 import { InstrumentosGeneralComponent } from './pages/instrumentos-general/instrumentos-general.component';
 import { MatFormFieldModule } from '@angular/material/form-field'; // Importar para mat-form-field
 import { MatInputModule } from '@angular/material/input'; // Importar para matInput
-import { FormsModule } from '@angular/forms'; // Para usar [(ngModel)] si es necesario
+import { FormsModule } from '@angular/forms';
+import { ProductoDetallesComponent } from './pages/producto-detalles/producto-detalles.component'; // Para usar [(ngModel)] si es necesario
 @NgModule({
   declarations: [
     LayoutcltPageComponent,
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms'; // Para usar [(ngModel)] si es nec
     HomePageComponent,
     ListadoProductosComponent,
     HeroNosotrosComponent,
-    InstrumentosGeneralComponent
+    InstrumentosGeneralComponent,
+    ProductoDetallesComponent
   ],
   imports: [
     CommonModule,
